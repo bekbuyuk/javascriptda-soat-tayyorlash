@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, hsl(251, 100%, 50%), hsl(24, 100%, 50%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+.asosiy {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(254, 255, 254, 0.8);
+    border-radius: 50%;
+    border: 10px solid red;
+    position: relative;
+
+}
+.asosiy .raqam {
+    --rotat: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 2rem;
+
+}
+.asosiy .raqam1 {
+    --rotation: 30deg;
+
+}
+.asosiy .raqam2 {
+    --rotation: 60deg;
+    
+}
+.asosiy .raqam3 {
+    --rotation: 90deg;
+    
+}
+.asosiy .raqam4 {
+    --rotation: 120deg;
+    
+}
+.asosiy .raqam5 {
+    --rotation: 150deg;
+    
+}
+.asosiy .raqam6 {
+    --rotation: 180deg;
+    
+}
+.asosiy .raqam7 {
+    --rotation: 210deg;
+    
+}
+.asosiy .raqam8 {
+    --rotation: 240deg;
+    
+}
+.asosiy .raqam9 {
+    --rotation: 270deg;
+    
+}
+.asosiy .raqam10 {
+    --rotation: 300deg;
+    
+}
+.asosiy .raqam11 {
+    --rotation: 330deg;
+    
+}
+.asosiy .mil {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 10px;
+    height: 148px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation)* 1deg));
+
+
+}
+
+.asosiy::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+}
+.asosiy .mil.sekund {
+    width: 5px;
+    height: 45%;
+    background-color: rgba(228, 8, 8);
+    border: 1px solid white;
+}
+
+.asosiy .mil.daqiqa {
+    width: 8px;
+    height: 45%;
+    background-color: rgba(46, 14, 189);
+    border: 1px solid black;
+
+}
+
+.asosiy .mil.soat {
+    width: 12px;
+    height: 38%;
+    background-color: rgba(11 , 8, 187);
+    border: 1px solid black;
+
+}
+
